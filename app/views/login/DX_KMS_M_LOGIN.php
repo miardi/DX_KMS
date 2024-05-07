@@ -20,7 +20,7 @@
                 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
                 <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="NPK">
+                    <input type="text" class="form-control" id="floatingInput" name="NPK" placeholder="NPK">
                     <label for="floatingInput">NPK</label>
                 </div>
 

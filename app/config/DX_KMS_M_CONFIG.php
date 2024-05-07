@@ -1,6 +1,6 @@
 <?php
 
-define('SYSTEM_NAME',"/DX_KMS");
+define('SYSTEM_NAME',"/GitHub/DX_KMS");
 define('BASE_URL',"http://".$_SERVER['SERVER_NAME'].SYSTEM_NAME.'/public');
 
 define('DB_HOST','ACE-DIGITALIZE');
