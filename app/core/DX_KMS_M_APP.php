@@ -16,9 +16,20 @@ class App {
         
         return $controllerDir.$type.strtoupper($name)."_CONTROLLER.php";
     }
+
+    private function checkLogin($url){
+        if(!isset($_SESSION['npk'])){
+            $url[0] = "login";
+        }
+
+        return $url;
+    }
     
     public function __construct() {
         $url = $this->parseURL();
+
+        //Check login
+        $url = $this -> checkLogin($url);
 
         //Controller
         if(file_exists($this->pathDir($url[0]))){
@@ -55,4 +66,5 @@ class App {
         }
         return $url=["Home"];
     }
+
 }
