@@ -6,7 +6,10 @@ class Controller{
 
         switch($view[1]){
             case 'score' : $type = "_T_";break;
+            case 'remidial' : $type = "_T_";break;
+            case 'input_score' : $type = "_T_";break;
             case 'home' : $type = "_R_";break;
+            case 'detail_scores' : $type = "_R_";break;
             default : $type = "_M_";break;
         }
 

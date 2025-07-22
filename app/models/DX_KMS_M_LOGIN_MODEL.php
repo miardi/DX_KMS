@@ -9,7 +9,7 @@ class Login_Model{
     }
 
     public function checkUser($npk){
-        $this->db->query('SELECT npk FROM ' . $this->table . ' WHERE npk=:npk');
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE npk=:npk');
         $this->db->bind('npk',$npk);
         return $this->db->single();
     }
